@@ -11,5 +11,7 @@ namespace WebApplicationTestProject1.Models
         [Required(ErrorMessage = "ImageUrl cant be empty")]
 
         public string ImageUrl { get; set; }
+
+        public ICollection<Property> Properties { get; set; }
     }
 }
